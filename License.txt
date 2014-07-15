@@ -1,0 +1,6 @@
+This project is copyrighted with all rights reserved. It contains
+trade secrets and contents which may become subject to patent pending.
+
+Executables may be freely shared.
+
+(c) 2013-2014 Lassesen Consulting, LLC
