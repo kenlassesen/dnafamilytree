@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96E249CB-0AF0-45EE-BE91-9F7F23C9D5BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DnaTreeBuilder</RootNamespace>
+    <AssemblyName>DnaTreeBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFamilyDisplayGenetic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFamilyDisplayGenetic.Designer.cs">
+      <DependentUpon>FormFamilyDisplayGenetic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFamilyDisplayAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFamilyDisplayAll.Designer.cs">
+      <DependentUpon>FormFamilyDisplayAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFamilyBuilderAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFamilyBuilderAll.Designer.cs">
+      <DependentUpon>FormFamilyBuilderAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFamilyDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFamilyDisplay.Designer.cs">
+      <DependentUpon>FormFamilyDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMerge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMerge.Designer.cs">
+      <DependentUpon>FormMerge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonMatch.Designer.cs">
+      <DependentUpon>FormPersonMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatch.Designer.cs">
+      <DependentUpon>FormMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFamilyBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFamilyBuilder.Designer.cs">
+      <DependentUpon>FormFamilyBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShared.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShared.Designer.cs">
+      <DependentUpon>FormShared.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instance\CsvExport.cs" />
+    <Compile Include="FormDna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDna.Designer.cs">
+      <DependentUpon>FormDna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instance\FamilyFinderImport.cs" />
+    <Compile Include="Instance\GeneticDistance.cs" />
+    <Compile Include="Instance\Match.cs" />
+    <Compile Include="Instance\FamilyMatch.cs" />
+    <Compile Include="Instance\Parser23AndMe.cs" />
+    <Compile Include="Instance\Personv2.cs" />
+    <Compile Include="Instance\Relationship.cs" />
+    <Compile Include="Instance\Repository.cs" />
+    <Compile Include="Instance\SaveUtility.cs" />
+    <Compile Include="Instance\Version1Import.cs" />
+    <Compile Include="FormPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerson.Designer.cs">
+      <DependentUpon>FormPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFamilyDisplayGenetic.resx">
+      <DependentUpon>FormFamilyDisplayGenetic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFamilyBuilderAll.resx">
+      <DependentUpon>FormFamilyBuilderAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFamilyDisplay.resx">
+      <DependentUpon>FormFamilyDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFamilyDisplayAll.resx">
+      <DependentUpon>FormFamilyDisplayAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMerge.resx">
+      <DependentUpon>FormMerge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonMatch.resx">
+      <DependentUpon>FormPersonMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDna.resx">
+      <DependentUpon>FormDna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMatch.resx">
+      <DependentUpon>FormMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerson.resx">
+      <DependentUpon>FormPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFamilyBuilder.resx">
+      <DependentUpon>FormFamilyBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShared.resx">
+      <DependentUpon>FormShared.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dna.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
